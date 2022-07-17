@@ -2,21 +2,19 @@ import React from "react";
 import './add-task.styles.css';
 import Button from '../../components/button/button.component';
 
-const AddTask = () => {
 
-    const addNewTask = () => {}
-
+const AddTask = ({ addNewTask, setTitle }) => {
     return (
         <div className="add-task">
             <div className="add-heading">
                 <p>Add a new task in the list</p>
             </div>
-            <div className="add-input">
-                <input type="text" className="input-field" placeholder="Enter the task here"/>
+            <form className="form-data">
+                <input type="text" className="input-field" placeholder="Enter the task here" onChange={e => setTitle(e.target.value)} />
                 <div className="submit-btn">
                     <Button onClickHandler={addNewTask}>Submit</Button>
                 </div>
-            </div>
+            </form>
         </div>
     )
 }
