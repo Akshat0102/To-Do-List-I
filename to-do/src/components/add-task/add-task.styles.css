@@ -1,0 +1,46 @@
+.add-task{
+    height: 15%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-heading{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.add-heading p{
+    color: white;
+    font-family: Inter-Regular;
+}
+
+.add-input{
+    width: 60%;
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-field{
+    width: 72%;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: #727272;
+    color: white;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(222, 222, 222);
+    font-size: 12px;
+}
+
+.submit-btn{
+    width: 20%;
+}
