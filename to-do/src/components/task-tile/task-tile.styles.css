@@ -4,6 +4,7 @@
     background-color: #2f2f2f;
     border-radius: 8px;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.8);
+    margin-right: 8px;
 }
 
 .tile-gn {
@@ -12,6 +13,7 @@
     background-color: #202020;
     border-radius: 8px;
     border: 1px solid #7AB530;
+    margin-right: 8px;
 }
 
 .task-desc {
