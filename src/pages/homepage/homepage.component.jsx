@@ -23,7 +23,7 @@ const HomePage = () => {
     // for adding new to-do
     const addNewTask = async () => {
         setLoader(true);
-        const res = await axios.post('https://todo-backendnode.herokuapp.com/todo/new', {
+        await axios.post('https://todo-backendnode.herokuapp.com/todo/new', {
             title: title
         });
         setLoader(false);
@@ -32,14 +32,14 @@ const HomePage = () => {
     //for deleting to-do
     const deleteTask = async (id) => {
         setLoader(true);
-        const res = await axios.delete(`https://todo-backendnode.herokuapp.com/todo/${id}`)
+        await axios.delete(`https://todo-backendnode.herokuapp.com/todo/${id}`)
         setLoader(false);
     }
 
     //for updating to-do
     const updateTask = async (id, completed) => {
         setLoader(true);
-        const res = await axios.put(`https://todo-backendnode.herokuapp.com/todo/update/${id}`, {
+        await axios.put(`https://todo-backendnode.herokuapp.com/todo/update/${id}`, {
             completed
         })
         setLoader(false);
