@@ -3,7 +3,6 @@ import TaskTile from "../task-tile/task-tile.component";
 import './tasks-todo.styles.css';
 
 const TasksToDo = ({ todos, editLoader, toggleTaskStatus, deleteTask }) => {
-    console.log(todos)
     return (
         todos && !editLoader ?
             <div className="tasks">
