@@ -6,6 +6,7 @@ const cors = require('cors');
 
 const {configDB} = require('./config/database');
 const todoRoutes = require('./routes/todo.routes')
+const PORT = process.env.PORT || 9000;
 
 app.use(cors());
 app.use(express.json());
@@ -19,6 +20,6 @@ app.get('/', (req,res) => {
 
 app.use('/', todoRoutes);
 
-app.listen(9000, () => {
+app.listen(PORT, () => {
     console.log("SERVING ON PORT 9000");
 })
