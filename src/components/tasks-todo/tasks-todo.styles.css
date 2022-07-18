@@ -25,14 +25,32 @@
 }
 
 /*hiding scrollbar*/
-.tasks-wrap::-webkit-scrollbar {
-    /*Chrome, Safari and Opera */
-    display: none;
-}
-
 .tasks-wrap {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+}
+
+/* adding and styling scrollbar (for Chrome, Safari, Mozilla)*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    margin-top: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #C620A7;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
 }
